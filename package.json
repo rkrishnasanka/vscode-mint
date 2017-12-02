@@ -1,0 +1,26 @@
+{
+    "name": "uf",
+    "displayName": "mint",
+    "description": "Microfluidic Netlist Description Language",
+    "version": "0.0.1",
+    "publisher": "rkrishnasanka",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mint",
+            "aliases": ["mint", "mint"],
+            "extensions": [".uf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mint",
+            "scopeName": "text.mint",
+            "path": "./syntaxes/mint.tmLanguage.json"
+        }]
+    }
+}
