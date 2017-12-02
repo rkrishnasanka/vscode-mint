@@ -6,36 +6,55 @@
         },
         {
             "include": "#strings"
+        },
+        {
+            "include": "#values"
         }
     ],
     "repository": {
         "keywords": {
             "patterns": [{
                     "name": "keyword.hierarchy.mint",
-                    "match": "\\b(IMPORT|LAYER|DEVICE|END)\\b"
+                    "match": "\\b(LAYER|DEVICE|END)\\b"
+                },
+                {
+                    "name": "keyword.control.import",
+                    "match": "\\b(IMPORT)\\b"
                 },
                 {
                     "name": "keyword.LAYERTYPES.mint",
                     "match": "\\b(FLOW|CONTROL|INTEGRATION)\\b"
                 },
                 {
-                    "name": "keyword.controlwords.mint",
+                    "name": "keyword.control",
                     "match": "\\b(from|to|of)\\b"
                 },
                 {
-                    "name": "keyword.CONSTRAINTS.mint",
+                    "name": "keyword.operator.js",
                     "match": "\\b(V|H|direction|dir|vconnect|hconnect|GRID|BANK)\\b"
+                },
+                {
+                    "name": "entity.name.type",
+                    "match": "\\b[A-Z]+([A-Z]|\\s)+ \\b"
                 }
             ]
         },
         "strings": {
-            "name": "string.quoted.double.mint",
-            "begin": "\"",
-            "end": "\"",
             "patterns": [{
-                "name": "constant.character.escape.mint",
-                "match": "\\\\."
+                "name": "comment",
+                "match": "#(.)*$"
             }]
+        },
+        "values": {
+            "patterns": [{
+                    "name": "constant.numeric",
+                    "match": "\\b\\d+\\b"
+                },
+                {
+                    "name": "constant.language",
+                    "match": "\\b(YES|NO)\\b"
+                }
+            ]
         }
     },
     "scopeName": "text.mint"

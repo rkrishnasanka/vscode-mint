@@ -2,7 +2,7 @@
     "name": "uf",
     "displayName": "mint",
     "description": "Microfluidic Netlist Description Language",
-    "version": "0.0.1",
+    "version": "0.2.0",
     "publisher": "rkrishnasanka",
     "engines": {
         "vscode": "^1.16.0"
@@ -22,5 +22,16 @@
             "scopeName": "text.mint",
             "path": "./syntaxes/mint.tmLanguage.json"
         }]
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rkrishnasanka/vscode-mint"
+    },
+    "bugs": {
+        "url": "https://github.com/rkrishnasanka/vscode-mint/issues"
+    },
+    "author": {
+        "name": "rkrishnasanka"
+    },
+    "icon": "icon.png"
 }
