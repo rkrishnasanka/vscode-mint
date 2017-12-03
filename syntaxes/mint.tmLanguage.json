@@ -27,10 +27,10 @@
                 },
                 {
                     "name": "keyword.control",
-                    "match": "\\b(from|to|of)\\b"
+                    "match": "\\b(from|to|of|on)\\b"
                 },
                 {
-                    "name": "keyword.operator.js",
+                    "name": "support.function",
                     "match": "\\b(V|H|direction|dir|vconnect|hconnect|GRID|BANK)\\b"
                 },
                 {
